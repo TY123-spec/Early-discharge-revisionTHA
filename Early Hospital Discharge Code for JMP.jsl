@@ -1,0 +1,16 @@
+
+Bootstrap Forest(
+	Y( :Early Hospital Discharge ),
+	X(
+		:Sex, :"Age <75 years"n, :Race, :Anesthesia Type, :Body mass index,
+		:Functional Status, :Anemia, :"Operative Time < 3 hours"n, :Home Support,
+		:Indication
+	),
+	Validation Portion( 0.25 ),
+	Method( "Bootstrap Forest" ),
+	ROC Curve( 1 ),
+	Portion Bootstrap( 0.5 ),
+	Number Terms( 8 ),
+	Number Trees( 27 ),
+	Go
+);
